@@ -19,13 +19,6 @@
     {"id": "COROLLAHYBRID_TID_2", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "map": {"1":{"description":"Front left","value":"FL"},"2":{"description":"Front right","value":"FR"},"3":{"description":"Rear left","value":"RL"},"4":{"description":"Rear right","value":"RR"}} }, "name": "Tire 2 position"},
     {"id": "COROLLAHYBRID_TID_3", "path": "Tires", "fmt": {"bix": 16, "len": 8, "map": {"1":{"description":"Front left","value":"FL"},"2":{"description":"Front right","value":"FR"},"3":{"description":"Rear left","value":"RL"},"4":{"description":"Rear right","value":"RR"}} }, "name": "Tire 3 position"},
     {"id": "COROLLAHYBRID_TID_4", "path": "Tires", "fmt": {"bix": 24, "len": 8, "map": {"1":{"description":"Front left","value":"FL"},"2":{"description":"Front right","value":"FR"},"3":{"description":"Rear left","value":"RL"},"4":{"description":"Rear right","value":"RR"}} }, "name": "Tire 4 position"}
-  ]},
-{ "hdr": "7B0", "rax": "7B8", "cmd": {"21": "03"}, "freq": 0.25,
-  "signals": [
-    {"id": "COROLLAHYBRID_TIRE_FR_SPD", "path": "Movement", "fmt": {           "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
-    {"id": "COROLLAHYBRID_TIRE_FL_SPD", "path": "Movement", "fmt": {"bix": 8,  "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
-    {"id": "COROLLAHYBRID_TIRE_RR_SPD", "path": "Movement", "fmt": {"bix": 16, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
-    {"id": "COROLLAHYBRID_TIRE_RL_SPD", "path": "Movement", "fmt": {"bix": 24, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
   ]}
 ]
 }
