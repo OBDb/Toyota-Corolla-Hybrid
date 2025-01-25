@@ -2,6 +2,10 @@
 
 This repository contains signal set configurations for the Toyota Corolla Hybrid, organized by model year and version. The files are structured to allow for easy differentiation between model generations and other vehicle parameters, ensuring accurate signal mapping for each version of the Toyota Corolla Hybrid.
 
+## Similar ECUs
+
+- [Toyota Camry](https://github.com/OBDb/Toyota-Camry)
+
 ## Generations
 
 The Toyota Corolla Hybrid represents Toyota's commitment to hybrid technology in their most popular compact car platform:
