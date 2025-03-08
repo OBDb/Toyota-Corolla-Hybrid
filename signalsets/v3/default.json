@@ -43,6 +43,10 @@
           "4": { "description": "Rear right",  "value": "RR" }
         }}
     }
+  ]},
+{ "hdr": "7C0", "rax": "7C8", "fcm1": true, "dbg": true, "cmd": {"22": "1022"}, "freq": 30,
+  "signals": [
+    {"id": "COROLLAHYBRID_FLV", "fmt": { "len": 16, "max": 100, "div": 100, "unit": "liters" }, "name": "Fuel remaining", "suggestedMetric": "fuelTankLevel"}
   ]}
 ]
 }
