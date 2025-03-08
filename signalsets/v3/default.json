@@ -15,10 +15,34 @@
   ]},
 { "hdr": "750", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "2021"}, "freq": 86400,
   "signals": [
-    {"id": "COROLLAHYBRID_TID_1", "path": "Tires", "fmt": {           "len": 8, "map": {"1":{"description":"Front left","value":"FL"},"2":{"description":"Front right","value":"FR"},"3":{"description":"Rear left","value":"RL"},"4":{"description":"Rear right","value":"RR"}} }, "name": "Tire 1 position"},
-    {"id": "COROLLAHYBRID_TID_2", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "map": {"1":{"description":"Front left","value":"FL"},"2":{"description":"Front right","value":"FR"},"3":{"description":"Rear left","value":"RL"},"4":{"description":"Rear right","value":"RR"}} }, "name": "Tire 2 position"},
-    {"id": "COROLLAHYBRID_TID_3", "path": "Tires", "fmt": {"bix": 16, "len": 8, "map": {"1":{"description":"Front left","value":"FL"},"2":{"description":"Front right","value":"FR"},"3":{"description":"Rear left","value":"RL"},"4":{"description":"Rear right","value":"RR"}} }, "name": "Tire 3 position"},
-    {"id": "COROLLAHYBRID_TID_4", "path": "Tires", "fmt": {"bix": 24, "len": 8, "map": {"1":{"description":"Front left","value":"FL"},"2":{"description":"Front right","value":"FR"},"3":{"description":"Rear left","value":"RL"},"4":{"description":"Rear right","value":"RR"}} }, "name": "Tire 4 position"}
+    {"id": "COROLLAHYBRID_TID_1", "path": "Tires", "name": "Tire 1 position", "fmt": {"len": 8, "map": {
+          "1": { "description": "Front left",  "value": "FL" },
+          "2": { "description": "Front right", "value": "FR" },
+          "3": { "description": "Rear left",   "value": "RL" },
+          "4": { "description": "Rear right",  "value": "RR" }
+        }}
+    },
+    {"id": "COROLLAHYBRID_TID_2", "path": "Tires", "name": "Tire 2 position", "fmt": {"bix": 8, "len": 8, "map": {
+          "1": { "description": "Front left",  "value": "FL" },
+          "2": { "description": "Front right", "value": "FR" },
+          "3": { "description": "Rear left",   "value": "RL" },
+          "4": { "description": "Rear right",  "value": "RR" }
+        }}
+    },
+    {"id": "COROLLAHYBRID_TID_3", "path": "Tires", "name": "Tire 3 position", "fmt": {"bix": 16, "len": 8, "map": {
+          "1": { "description": "Front left",  "value": "FL" },
+          "2": { "description": "Front right", "value": "FR" },
+          "3": { "description": "Rear left",   "value": "RL" },
+          "4": { "description": "Rear right",  "value": "RR" }
+        }}
+    },
+    {"id": "COROLLAHYBRID_TID_4", "path": "Tires", "name": "Tire 4 position", "fmt": {"bix": 24, "len": 8, "map": {
+          "1": { "description": "Front left",  "value": "FL" },
+          "2": { "description": "Front right", "value": "FR" },
+          "3": { "description": "Rear left",   "value": "RL" },
+          "4": { "description": "Rear right",  "value": "RR" }
+        }}
+    }
   ]}
 ]
 }
