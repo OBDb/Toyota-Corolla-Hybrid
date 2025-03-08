@@ -1,4 +1,8 @@
 { "commands": [
+{ "hdr": "700", "eax": "2A", "tst": "2A", "fcm1": true, "dbg": true, "cmd": {"22": "107B"}, "freq": 1,
+  "signals": [
+    {"id": "COROLLAHYBRID_EOT", "path": "Engine", "fmt": {"bix": 192, "len": 8, "max": 255, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"}
+  ]},
 { "hdr": "750", "eax": "2A", "tst": "2A", "fcm1": true, "dbg": true, "cmd": {"22": "1004"}, "freq": 30,
   "signals": [
     {"id": "COROLLAHYBRID_TT_1", "path": "Tires", "fmt": {           "len": 8, "max": 100, "min": -30, "add": -40, "unit": "celsius" }, "name": "Rear right tire temperature"},
