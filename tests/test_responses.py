@@ -16,6 +16,17 @@ TEST_CASES = [
         "model_year": "2024",
         "signalset": "default.json",
         "tests": [
+            # Tire positions
+            ("""
+7582A10086220210403
+7582A21020100000000
+             """, {
+                 "COROLLAHYBRID_TID_1": "RR",
+                 "COROLLAHYBRID_TID_2": "RL",
+                 "COROLLAHYBRID_TID_3": "FR",
+                 "COROLLAHYBRID_TID_4": "FL",
+                 }),
+
             # Tire temperatures
             ("""
 7582A10086210040000
