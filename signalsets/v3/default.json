@@ -1,22 +1,4 @@
 { "commands": [
-{ "hdr": "700", "eax": "2A", "tst": "2A", "fcm1": true, "dbg": true, "cmd": {"22": "107B"}, "freq": 1,
-  "signals": [
-    {"id": "COROLLAHYBRID_EOT", "path": "Engine", "fmt": {"bix": 192, "len": 8, "max": 255, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"}
-  ]},
-{ "hdr": "750", "eax": "2A", "tst": "2A", "fcm1": true, "dbg": true, "cmd": {"22": "1004"}, "freq": 30,
-  "signals": [
-    {"id": "COROLLAHYBRID_TT_1", "path": "Tires", "fmt": {           "len": 8, "max": 100, "min": -30, "add": -40, "unit": "celsius" }, "name": "Rear right tire temperature"},
-    {"id": "COROLLAHYBRID_TT_2", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 100, "min": -30, "add": -40, "unit": "celsius" }, "name": "Rear left tire temperature"},
-    {"id": "COROLLAHYBRID_TT_3", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 100, "min": -30, "add": -40, "unit": "celsius" }, "name": "Front right tire temperature"},
-    {"id": "COROLLAHYBRID_TT_4", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 100, "min": -30, "add": -40, "unit": "celsius" }, "name": "Front left tire temperature"}
-  ]},
-{ "hdr": "750", "eax": "2A", "tst": "2A", "fcm1": true, "dbg": true, "cmd": {"22": "1005"}, "freq": 30,
-  "signals": [
-    {"id": "COROLLAHYBRID_TP_1", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 56.8, "div": 4.125, "add": -5.6969697, "unit": "psi" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
-    {"id": "COROLLAHYBRID_TP_2", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 56.8, "div": 4.125, "add": -5.6969697, "unit": "psi" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
-    {"id": "COROLLAHYBRID_TP_3", "path": "Tires", "fmt": {"bix": 40, "len": 8, "max": 56.8, "div": 4.125, "add": -5.6969697, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
-    {"id": "COROLLAHYBRID_TP_4", "path": "Tires", "fmt": {"bix": 56, "len": 8, "max": 56.8, "div": 4.125, "add": -5.6969697, "unit": "psi" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"}
-  ]},
 { "hdr": "750", "eax": "2A", "tst": "2A", "fcm1": true, "dbg": true, "cmd": {"22": "2021"}, "freq": 86400,
   "signals": [
     {"id": "COROLLAHYBRID_TID_1", "path": "Tires", "name": "Tire 1 position", "fmt": {"len": 8, "map": {
@@ -47,6 +29,20 @@
           "4": { "description": "Rear right",  "value": "RR" }
         }}
     }
+  ]},
+{ "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "1004"}, "freq": 30,
+  "signals": [
+    {"id": "COROLLAHYBRID_TT_1", "path": "Tires", "fmt": {           "len": 8, "max": 100, "min": -30, "add": -40, "nullmin": -30, "unit": "celsius" }, "name": "Rear right tire temperature"},
+    {"id": "COROLLAHYBRID_TT_2", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 100, "min": -30, "add": -40, "nullmin": -30, "unit": "celsius" }, "name": "Rear left tire temperature"},
+    {"id": "COROLLAHYBRID_TT_3", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 100, "min": -30, "add": -40, "nullmin": -30, "unit": "celsius" }, "name": "Front right tire temperature"},
+    {"id": "COROLLAHYBRID_TT_4", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 100, "min": -30, "add": -40, "nullmin": -30, "unit": "celsius" }, "name": "Front left tire temperature"}
+  ]},
+{ "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "1005"}, "freq": 30,
+  "signals": [
+    {"id": "COROLLAHYBRID_TP_1", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 56.8, "div": 4.125, "add": -5.6969697, "nullmin": 0, "unit": "psi" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
+    {"id": "COROLLAHYBRID_TP_2", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 56.8, "div": 4.125, "add": -5.6969697, "nullmin": 0, "unit": "psi" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "COROLLAHYBRID_TP_3", "path": "Tires", "fmt": {"bix": 40, "len": 8, "max": 56.8, "div": 4.125, "add": -5.6969697, "nullmin": 0, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
+    {"id": "COROLLAHYBRID_TP_4", "path": "Tires", "fmt": {"bix": 56, "len": 8, "max": 56.8, "div": 4.125, "add": -5.6969697, "nullmin": 0, "unit": "psi" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"}
   ]},
 { "hdr": "7C0", "eax": "2A", "tst": "2A", "fcm1": true, "dbg": true, "cmd": {"22": "1022"}, "freq": 30,
   "signals": [
