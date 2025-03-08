@@ -50,11 +50,11 @@
   ]},
 { "hdr": "7C0", "eax": "2A", "tst": "2A", "fcm1": true, "dbg": true, "cmd": {"22": "1022"}, "freq": 30,
   "signals": [
-    {"id": "COROLLAHYBRID_FLV", "fmt": { "len": 16, "max": 100, "div": 100, "unit": "liters" }, "name": "Fuel remaining", "suggestedMetric": "fuelTankLevel"}
+    {"id": "COROLLAHYBRID_FLV", "path": "Fuel", "fmt": { "len": 16, "max": 100, "div": 100, "unit": "liters" }, "name": "Fuel remaining", "suggestedMetric": "fuelTankLevel"}
   ]},
 { "hdr": "7D2", "eax": "2A", "tst": "2A", "fcm1": true, "dbg": true, "cmd": {"22": "1F5B"}, "freq": 30,
   "signals": [
-    {"id": "COROLLAHYBRID_SOC", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "State of charge", "suggestedMetric": "stateOfCharge"}
+    {"id": "COROLLAHYBRID_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "State of charge", "suggestedMetric": "stateOfCharge"}
   ]}
 ]
 }
