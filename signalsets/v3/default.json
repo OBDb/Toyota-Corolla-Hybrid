@@ -1,4 +1,8 @@
 { "commands": [
+{ "hdr": "700", "fcm1": true, "dbg": true, "cmd": {"22": "15F8"}, "freq": 30,
+  "signals": [
+    {"id": "COROLLAHYBRID_B_T", "path": "Battery", "fmt": { "len": 16, "max": 6513, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Battery temperature"}
+  ]},
 { "hdr": "700", "fcm1": true, "dbg": true, "cmd": {"22": "1621"}, "freq": 30,
   "signals": [
     {"id": "COROLLAHYBRID_GEAR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear"}
