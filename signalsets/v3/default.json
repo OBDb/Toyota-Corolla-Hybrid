@@ -48,6 +48,16 @@
   "signals": [
     {"id": "COROLLAHYBRID_FLV", "path": "Fuel", "fmt": { "len": 16, "max": 655, "div": 100, "nullmax": 655, "unit": "liters" }, "name": "Fuel remaining", "suggestedMetric": "fuelTankLevel"}
   ]},
+{ "hdr": "7D2", "fcm1": true, "dbg": true, "cmd": {"22": "10A5"}, "freq": 30,
+  "signals": [
+    {"id": "COROLLAHYBRID_INVRT_T",         "path": "Engine", "fmt": {          "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor inverter temperature"},
+    {"id": "COROLLAHYBRID_INVRT_T_POSTIGN", "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor inverter temperature (post ignition)"}
+  ]},
+{ "hdr": "7D2", "fcm1": true, "dbg": true, "cmd": {"22": "10B0"}, "freq": 30,
+  "signals": [
+    {"id": "COROLLAHYBRID_V_PREBOOST",  "path": "Battery", "fmt": {           "len": 16, "max": 32767, "div": 2, "unit": "volts" }, "name": "Voltage before boosting"},
+    {"id": "COROLLAHYBRID_V_POSTBOOST", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 32767, "div": 2, "unit": "volts" }, "name": "Voltage after boosting"}
+  ]},
 { "hdr": "7D2", "fcm1": true, "cmd": {"22": "1F5B"}, "freq": 1,
   "signals": [
     {"id": "COROLLAHYBRID_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "State of charge", "suggestedMetric": "stateOfCharge"}
