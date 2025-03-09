@@ -23,7 +23,7 @@ TEST_CASES = [
             # State of charge
             ("7C805621022086B", {"COROLLAHYBRID_FLV": 21.55}),
             ("7C8056210220BA9", {"COROLLAHYBRID_FLV": 29.85}),
-            ("7C805621022FFFF", {"COROLLAHYBRID_FLV": 100}),
+            ("7C805621022FFFF", {"COROLLAHYBRID_FLV": 655}),
 
             # Tire positions
             ("""
