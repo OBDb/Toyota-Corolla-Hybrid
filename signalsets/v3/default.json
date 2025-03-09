@@ -1,8 +1,4 @@
 { "commands": [
-{ "hdr": "700", "fcm1": true, "dbg": true, "cmd": {"22": "107B"}, "freq": 1,
-  "signals": [
-    {"id": "COROLLAHYBRID_EOT", "path": "Engine", "fmt": {"bix": 192, "len": 8, "max": 255, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"}
-  ]},
 { "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "1004"}, "freq": 5,
   "signals": [
     {"id": "COROLLAHYBRID_TT_1", "path": "Tires", "fmt": {           "len": 8, "max": 100, "min": -30, "add": -40, "nullmin": -30, "unit": "celsius" }, "name": "Front right tire temperature"},
@@ -48,11 +44,11 @@
         }}
     }
   ]},
-{ "hdr": "7C0", "fcm1": true, "dbg": true, "cmd": {"22": "1022"}, "freq": 30,
+{ "hdr": "7C0", "fcm1": true, "cmd": {"22": "1022"}, "freq": 1,
   "signals": [
-    {"id": "COROLLAHYBRID_FLV", "path": "Fuel", "fmt": { "len": 16, "max": 100, "div": 100, "unit": "liters" }, "name": "Fuel remaining", "suggestedMetric": "fuelTankLevel"}
+    {"id": "COROLLAHYBRID_FLV", "path": "Fuel", "fmt": { "len": 16, "max": 655, "div": 100, "nullmax": 655, "unit": "liters" }, "name": "Fuel remaining", "suggestedMetric": "fuelTankLevel"}
   ]},
-{ "hdr": "7D2", "fcm1": true, "dbg": true, "cmd": {"22": "1F5B"}, "freq": 30,
+{ "hdr": "7D2", "fcm1": true, "cmd": {"22": "1F5B"}, "freq": 1,
   "signals": [
     {"id": "COROLLAHYBRID_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "State of charge", "suggestedMetric": "stateOfCharge"}
   ]}

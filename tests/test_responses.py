@@ -16,6 +16,15 @@ TEST_CASES = [
         "model_year": "2024",
         "signalset": "default.json",
         "tests": [
+            # State of charge
+            ("7DA04621F5B96", {"COROLLAHYBRID_SOC": 58.8235294117647}),
+            ("7DA04621F5BB3", {"COROLLAHYBRID_SOC": 70.19607843137256}),
+
+            # State of charge
+            ("7C805621022086B", {"COROLLAHYBRID_FLV": 21.55}),
+            ("7C8056210220BA9", {"COROLLAHYBRID_FLV": 29.85}),
+            ("7C805621022FFFF", {"COROLLAHYBRID_FLV": 100}),
+
             # Tire positions
             ("""
 7582A10086220210403
@@ -95,7 +104,7 @@ def test_signals(test_group: Dict[str, Any]):
                 response_hex,
                 expected_values,
                 can_id_format=CANIDFormat.ELEVEN_BIT,
-                extended_addressing_enabled=True
+                extended_addressing_enabled=response_hex.strip().startswith('758')
             )
         except Exception as e:
             pytest.fail(
