@@ -1,0 +1,192 @@
+command_id: 7C0.221022
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 7C805621022086B
+  expected_values:
+    COROLLAHYBRID_FLV: 21.55
+- response: 7C8056210220879
+  expected_values:
+    COROLLAHYBRID_FLV: 21.69
+- response: 7C805621022087B
+  expected_values:
+    COROLLAHYBRID_FLV: 21.71
+- response: 7C8056210220891
+  expected_values:
+    COROLLAHYBRID_FLV: 21.93
+- response: 7C805621022089E
+  expected_values:
+    COROLLAHYBRID_FLV: 22.06
+- response: 7C805621022089F
+  expected_values:
+    COROLLAHYBRID_FLV: 22.07
+- response: 7C80562102208AA
+  expected_values:
+    COROLLAHYBRID_FLV: 22.18
+- response: 7C80562102208B2
+  expected_values:
+    COROLLAHYBRID_FLV: 22.26
+- response: 7C80562102208C9
+  expected_values:
+    COROLLAHYBRID_FLV: 22.49
+- response: 7C8056210220920
+  expected_values:
+    COROLLAHYBRID_FLV: 23.36
+- response: 7C8056210220924
+  expected_values:
+    COROLLAHYBRID_FLV: 23.4
+- response: 7C805621022093A
+  expected_values:
+    COROLLAHYBRID_FLV: 23.62
+- response: 7C805621022094C
+  expected_values:
+    COROLLAHYBRID_FLV: 23.8
+- response: 7C805621022096A
+  expected_values:
+    COROLLAHYBRID_FLV: 24.1
+- response: 7C8056210220972
+  expected_values:
+    COROLLAHYBRID_FLV: 24.18
+- response: 7C8056210220977
+  expected_values:
+    COROLLAHYBRID_FLV: 24.23
+- response: 7C805621022097C
+  expected_values:
+    COROLLAHYBRID_FLV: 24.28
+- response: 7C805621022097D
+  expected_values:
+    COROLLAHYBRID_FLV: 24.29
+- response: 7C8056210220986
+  expected_values:
+    COROLLAHYBRID_FLV: 24.38
+- response: 7C805621022098C
+  expected_values:
+    COROLLAHYBRID_FLV: 24.44
+- response: 7C8056210220992
+  expected_values:
+    COROLLAHYBRID_FLV: 24.5
+- response: 7C8056210220997
+  expected_values:
+    COROLLAHYBRID_FLV: 24.55
+- response: 7C80562102209AD
+  expected_values:
+    COROLLAHYBRID_FLV: 24.77
+- response: 7C80562102209B1
+  expected_values:
+    COROLLAHYBRID_FLV: 24.81
+- response: 7C80562102209B2
+  expected_values:
+    COROLLAHYBRID_FLV: 24.82
+- response: 7C80562102209B5
+  expected_values:
+    COROLLAHYBRID_FLV: 24.85
+- response: 7C80562102209B8
+  expected_values:
+    COROLLAHYBRID_FLV: 24.88
+- response: 7C80562102209BF
+  expected_values:
+    COROLLAHYBRID_FLV: 24.95
+- response: 7C80562102209CA
+  expected_values:
+    COROLLAHYBRID_FLV: 25.06
+- response: 7C80562102209CC
+  expected_values:
+    COROLLAHYBRID_FLV: 25.08
+- response: 7C80562102209D8
+  expected_values:
+    COROLLAHYBRID_FLV: 25.2
+- response: 7C80562102209DC
+  expected_values:
+    COROLLAHYBRID_FLV: 25.24
+- response: 7C80562102209DE
+  expected_values:
+    COROLLAHYBRID_FLV: 25.26
+- response: 7C80562102209DF
+  expected_values:
+    COROLLAHYBRID_FLV: 25.27
+- response: 7C80562102209E0
+  expected_values:
+    COROLLAHYBRID_FLV: 25.28
+- response: 7C80562102209F1
+  expected_values:
+    COROLLAHYBRID_FLV: 25.45
+- response: 7C80562102209FA
+  expected_values:
+    COROLLAHYBRID_FLV: 25.54
+- response: 7C8056210220A00
+  expected_values:
+    COROLLAHYBRID_FLV: 25.6
+- response: 7C8056210220A05
+  expected_values:
+    COROLLAHYBRID_FLV: 25.65
+- response: 7C8056210220A0D
+  expected_values:
+    COROLLAHYBRID_FLV: 25.73
+- response: 7C8056210220A11
+  expected_values:
+    COROLLAHYBRID_FLV: 25.77
+- response: 7C8056210220A18
+  expected_values:
+    COROLLAHYBRID_FLV: 25.84
+- response: 7C8056210220A1A
+  expected_values:
+    COROLLAHYBRID_FLV: 25.86
+- response: 7C8056210220A1B
+  expected_values:
+    COROLLAHYBRID_FLV: 25.87
+- response: 7C8056210220A1D
+  expected_values:
+    COROLLAHYBRID_FLV: 25.89
+- response: 7C8056210220A1E
+  expected_values:
+    COROLLAHYBRID_FLV: 25.9
+- response: 7C8056210220A1F
+  expected_values:
+    COROLLAHYBRID_FLV: 25.91
+- response: 7C8056210220A22
+  expected_values:
+    COROLLAHYBRID_FLV: 25.94
+- response: 7C8056210220A26
+  expected_values:
+    COROLLAHYBRID_FLV: 25.98
+- response: 7C8056210220A27
+  expected_values:
+    COROLLAHYBRID_FLV: 25.99
+- response: 7C8056210220A30
+  expected_values:
+    COROLLAHYBRID_FLV: 26.08
+- response: 7C8056210220A35
+  expected_values:
+    COROLLAHYBRID_FLV: 26.13
+- response: 7C8056210220A36
+  expected_values:
+    COROLLAHYBRID_FLV: 26.14
+- response: 7C8056210220A3C
+  expected_values:
+    COROLLAHYBRID_FLV: 26.2
+- response: 7C8056210220A48
+  expected_values:
+    COROLLAHYBRID_FLV: 26.32
+- response: 7C8056210220A56
+  expected_values:
+    COROLLAHYBRID_FLV: 26.46
+- response: 7C8056210220A68
+  expected_values:
+    COROLLAHYBRID_FLV: 26.64
+- response: 7C8056210220A99
+  expected_values:
+    COROLLAHYBRID_FLV: 27.13
+- response: 7C8056210220AB0
+  expected_values:
+    COROLLAHYBRID_FLV: 27.36
+- response: 7C8056210220B37
+  expected_values:
+    COROLLAHYBRID_FLV: 28.71
+- response: 7C8056210220B3A
+  expected_values:
+    COROLLAHYBRID_FLV: 28.74
+- response: 7C8056210220BA9
+  expected_values:
+    COROLLAHYBRID_FLV: 29.85
+- response: 7C805621022FFFF
+  expected_values: {}
