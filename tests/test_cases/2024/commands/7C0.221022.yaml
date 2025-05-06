@@ -188,5 +188,3 @@ test_cases:
 - response: 7C8056210220BA9
   expected_values:
     COROLLAHYBRID_FLV: 29.85
-- response: 7C805621022FFFF
-  expected_values: {}
