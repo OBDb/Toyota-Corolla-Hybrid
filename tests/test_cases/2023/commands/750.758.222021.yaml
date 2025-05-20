@@ -1,0 +1,12 @@
+command_id: 750.758.222021
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: true
+test_cases:
+- response: |-
+    7582A10086220210302
+    7582A21010400000000
+  expected_values:
+    COROLLAHYBRID_TID_1: RL
+    COROLLAHYBRID_TID_2: FR
+    COROLLAHYBRID_TID_3: FL
+    COROLLAHYBRID_TID_4: RR
