@@ -1,6 +1,4 @@
-command_id: 750.758.222021
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: true
+command_id: 750.758.222021|e=2A,ta=2A,fc=1
 test_cases:
 - response: |-
     7582A10086220210302
