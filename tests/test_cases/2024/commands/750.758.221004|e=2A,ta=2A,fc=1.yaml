@@ -1,56 +1,56 @@
 command_id: 750.758.221004|e=2A,ta=2A,fc=1
 test_cases:
-- response: |-
+- expected_values:
+    COROLLAHYBRID_TT_4: 20
+  response: |-
     7582A10086210040000
     7582A21003C00000000
-  expected_values:
-    COROLLAHYBRID_TT_4: 20
-- response: |-
+- expected_values:
+    COROLLAHYBRID_TT_3: 18
+  response: |-
     7582A10086210040000
     7582A213A0000000000
-  expected_values:
-    COROLLAHYBRID_TT_3: 18
-- response: |-
-    7582A10086210040000
-    7582A213A3F00000000
-  expected_values:
+- expected_values:
     COROLLAHYBRID_TT_3: 18
     COROLLAHYBRID_TT_4: 23
-- response: |-
-    7582A10086210043B3B
-    7582A213F4000000000
-  expected_values:
+  response: |-
+    7582A10086210040000
+    7582A213A3F00000000
+- expected_values:
     COROLLAHYBRID_TT_1: 19
     COROLLAHYBRID_TT_2: 19
     COROLLAHYBRID_TT_3: 23
     COROLLAHYBRID_TT_4: 24
-- response: |-
-    7582A10086210043B3C
-    7582A21404100000000
-  expected_values:
+  response: |-
+    7582A10086210043B3B
+    7582A213F4000000000
+- expected_values:
     COROLLAHYBRID_TT_1: 19
     COROLLAHYBRID_TT_2: 20
     COROLLAHYBRID_TT_3: 24
     COROLLAHYBRID_TT_4: 25
-- response: |-
-    7582A10086210043B3F
-    7582A213A3F00000000
-  expected_values:
+  response: |-
+    7582A10086210043B3C
+    7582A21404100000000
+- expected_values:
     COROLLAHYBRID_TT_1: 19
     COROLLAHYBRID_TT_2: 23
     COROLLAHYBRID_TT_3: 18
     COROLLAHYBRID_TT_4: 23
-- response: |-
-    7582A10086210043D3C
-    7582A21000000000000
-  expected_values:
+  response: |-
+    7582A10086210043B3F
+    7582A213A3F00000000
+- expected_values:
     COROLLAHYBRID_TT_1: 21
     COROLLAHYBRID_TT_2: 20
-- response: |-
-    7582A10086210043E3C
-    7582A213F3F00000000
-  expected_values:
+  response: |-
+    7582A10086210043D3C
+    7582A21000000000000
+- expected_values:
     COROLLAHYBRID_TT_1: 22
     COROLLAHYBRID_TT_2: 20
     COROLLAHYBRID_TT_3: 23
     COROLLAHYBRID_TT_4: 23
+  response: |-
+    7582A10086210043E3C
+    7582A213F3F00000000

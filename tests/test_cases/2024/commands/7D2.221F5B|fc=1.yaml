@@ -1,8 +1,8 @@
 command_id: 7D2.221F5B|fc=1
 test_cases:
-- response: 7DA04621F5B62
-  expected_values:
+- expected_values:
     COROLLAHYBRID_SOC: 38.43137
-- response: 7DA04621F5BB3
-  expected_values:
+  response: 7DA04621F5B62
+- expected_values:
     COROLLAHYBRID_SOC: 70.19608
+  response: 7DA04621F5BB3
