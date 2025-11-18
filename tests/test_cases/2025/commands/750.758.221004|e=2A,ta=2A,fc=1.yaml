@@ -1,0 +1,10 @@
+command_id: 750.758.221004|e=2A,ta=2A,fc=1
+test_cases:
+- expected_values:
+    COROLLAHYBRID_TT_1: 13
+    COROLLAHYBRID_TT_2: 13
+    COROLLAHYBRID_TT_3: 14
+    COROLLAHYBRID_TT_4: 13
+  response: |-
+    7582A10086210043535
+    7582A21363500000000
