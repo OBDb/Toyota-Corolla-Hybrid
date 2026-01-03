@@ -1,26 +1,8 @@
 command_id: 7D2.221F5B|fc=1
 test_cases:
 - expected_values:
-    COROLLAHYBRID_SOC: 57.2549
-  response: 7DA04621F5B92
-- expected_values:
-    COROLLAHYBRID_SOC: 58.43137
-  response: 7DA04621F5B95
-- expected_values:
-    COROLLAHYBRID_SOC: 58.82353
-  response: 7DA04621F5B96
-- expected_values:
-    COROLLAHYBRID_SOC: 59.21569
-  response: 7DA04621F5B97
-- expected_values:
-    COROLLAHYBRID_SOC: 60.39216
-  response: 7DA04621F5B9A
-- expected_values:
-    COROLLAHYBRID_SOC: 60.78431
-  response: 7DA04621F5B9B
-- expected_values:
-    COROLLAHYBRID_SOC: 61.96078
-  response: 7DA04621F5B9E
+    COROLLAHYBRID_SOC: 41.17647
+  response: 7DA04621F5B69
 - expected_values:
     COROLLAHYBRID_SOC: 62.35294
   response: 7DA04621F5B9F
