@@ -1,0 +1,20 @@
+command_id: 7E0.0105
+test_cases:
+- expected_values:
+    ECT: 13
+  response: '7E803410535'
+- expected_values:
+    ECT: -5
+  response: 7EB03410523
+- expected_values:
+    ECT: 1
+  response: 7EB03410529
+- expected_values:
+    ECT: 7
+  response: 7EB0341052F
+- expected_values:
+    ECT: 18
+  response: 7EB0341053A
+- expected_values:
+    ECT: 22
+  response: 7EB0341053E
