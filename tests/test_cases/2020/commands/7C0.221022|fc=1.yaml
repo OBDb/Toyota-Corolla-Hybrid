@@ -10,5 +10,5 @@ test_cases:
     COROLLAHYBRID_FLV: 12.8
   response: 7C8056210220500
 - expected_values:
-    COROLLAHYBRID_FLV: 45.12
-  response: 7C80562102211A0
+    COROLLAHYBRID_FLV: 43.62
+  response: 7C805621022110A
