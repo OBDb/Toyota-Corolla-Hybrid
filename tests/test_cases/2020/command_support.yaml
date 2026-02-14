@@ -190,6 +190,7 @@ unsupported_commands_by_ecu:
   - 7E0.013E:CATEMP12
   - 7E0.0142:VPWR
   - 7E0.0143:LOAD_ABS
+  - 7E0.0145:TP_R
   - 7E0.0146:AAT
   - 7E0.0147:TP_B
   - 7E0.014C:TAC_PCT
