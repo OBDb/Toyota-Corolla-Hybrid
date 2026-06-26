@@ -106,6 +106,7 @@ supported_commands_by_ecu:
   - 010D:VSS
   - 0111:TP
   - 7E5.7ED.0104
+  - 7E5.7ED.0131
   "7E6":
   - 7E6.7EE.0104
   - 7E6.7EE.0105
@@ -179,7 +180,6 @@ unsupported_commands_by_ecu:
   - 7E5.7ED.011F
   - 7E5.7ED.0121
   - 7E5.7ED.0130
-  - 7E5.7ED.0131
   - 7E5.7ED.0142
   - 7E5.7ED.014D
   - 7E5.7ED.014E
