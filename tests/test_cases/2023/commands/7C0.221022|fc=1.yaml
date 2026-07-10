@@ -1,0 +1,23 @@
+command_id: 7C0.221022|fc=1
+test_cases:
+- expected_values:
+    COROLLAHYBRID_FLV: 36.76
+  response: 7C8056210220E5C
+- expected_values:
+    COROLLAHYBRID_FLV: 38.35
+  response: 7C8056210220EFB
+- expected_values:
+    COROLLAHYBRID_FLV: 38.96
+  response: 7C8056210220F38
+- expected_values:
+    COROLLAHYBRID_FLV: 39.08
+  response: 7C8056210220F44
+- expected_values:
+    COROLLAHYBRID_FLV: 39.09
+  response: 7C8056210220F45
+- expected_values:
+    COROLLAHYBRID_FLV: 39.3
+  response: 7C8056210220F5A
+- expected_values:
+    COROLLAHYBRID_FLV: 39.59
+  response: 7C8056210220F77
