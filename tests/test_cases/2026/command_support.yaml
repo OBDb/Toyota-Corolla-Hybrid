@@ -33,6 +33,8 @@ supported_commands_by_ecu:
   - 0146:AAT
   - 7E0.010D:VSS
   - 7E0.0147:TP_B
+  "7E2":
+  - 7E2.7EA.01A6
 unsupported_commands_by_ecu:
   "750":
   - 750.758.221004|e=2A,ta=2A,fc=1:COROLLAHYBRID_TT_1,COROLLAHYBRID_TT_2,COROLLAHYBRID_TT_3,COROLLAHYBRID_TT_4
