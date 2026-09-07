@@ -33,6 +33,7 @@ supported_commands_by_ecu:
   - 0146:AAT
   - 7E0.010D:VSS
   - 7E0.0131:CLR_DIST
+  - 7E0.0144:EQ_RAT
   - 7E0.0147:TP_B
   "7E2":
   - 7E2.7EA.01A6
