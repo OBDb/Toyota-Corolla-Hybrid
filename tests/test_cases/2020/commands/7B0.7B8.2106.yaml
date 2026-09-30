@@ -1,0 +1,22 @@
+command_id: 7B0.7B8.2106
+test_cases:
+- expected_values:
+    COROLLAHYBRID_YAW_1: 0
+    COROLLAHYBRID_YAW_2: 0
+  response: 7B806610680807FD3
+- expected_values:
+    COROLLAHYBRID_YAW_1: 0
+    COROLLAHYBRID_YAW_2: 0
+  response: 7B806610680807FE2
+- expected_values:
+    COROLLAHYBRID_YAW_1: 0
+    COROLLAHYBRID_YAW_2: 0
+  response: 7B80661068080800F
+- expected_values:
+    COROLLAHYBRID_YAW_1: 0
+    COROLLAHYBRID_YAW_2: 0
+  response: 7B80661068080803C
+- expected_values:
+    COROLLAHYBRID_YAW_1: 3
+    COROLLAHYBRID_YAW_2: 3
+  response: 7B806610683838258

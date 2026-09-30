@@ -1,0 +1,14 @@
+command_id: 7D2.7DA.2210A4
+test_cases:
+- expected_values:
+    COROLLAHYBRID_GEN_INVERTER_T: 23
+  response: 7DA066210A43F4048
+- expected_values:
+    COROLLAHYBRID_GEN_INVERTER_T: 23
+  response: 7DA066210A43F4347
+- expected_values:
+    COROLLAHYBRID_GEN_INVERTER_T: 26
+  response: 7DA066210A4424347
+- expected_values:
+    COROLLAHYBRID_GEN_INVERTER_T: 28
+  response: 7DA066210A4444047

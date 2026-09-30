@@ -1,0 +1,8 @@
+command_id: 7D2.7DA.221F46
+test_cases:
+- expected_values:
+    COROLLAHYBRID_AAT_7D2: 13
+  response: 7DA04621F4635
+- expected_values:
+    COROLLAHYBRID_AAT_7D2: 14
+  response: 7DA04621F4636

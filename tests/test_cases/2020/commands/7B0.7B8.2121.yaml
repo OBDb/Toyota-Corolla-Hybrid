@@ -1,0 +1,17 @@
+command_id: 7B0.7B8.2121
+test_cases:
+- expected_values:
+    COROLLAHYBRID_VSS: 0
+  response: 7B803612100
+- expected_values:
+    COROLLAHYBRID_VSS: 9.45
+  response: 7B803612107
+- expected_values:
+    COROLLAHYBRID_VSS: 21.6
+  response: 7B803612110
+- expected_values:
+    COROLLAHYBRID_VSS: 33.75
+  response: 7B803612119
+- expected_values:
+    COROLLAHYBRID_VSS: 35.1
+  response: 7B80361211A
