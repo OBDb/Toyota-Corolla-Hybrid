@@ -1,0 +1,17 @@
+command_id: 7C4.7CC.214A
+test_cases:
+- expected_values:
+    COROLLAHYBRID_COMP_TGT_SPD: 1993
+  response: 7CC04614A07C9
+- expected_values:
+    COROLLAHYBRID_COMP_TGT_SPD: 2250
+  response: 7CC04614A08CA
+- expected_values:
+    COROLLAHYBRID_COMP_TGT_SPD: 2392
+  response: 7CC04614A0958
+- expected_values:
+    COROLLAHYBRID_COMP_TGT_SPD: 2575
+  response: 7CC04614A0A0F
+- expected_values:
+    COROLLAHYBRID_COMP_TGT_SPD: 2639
+  response: 7CC04614A0A4F

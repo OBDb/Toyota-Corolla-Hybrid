@@ -1,0 +1,14 @@
+command_id: 7D2.7DA.221040
+test_cases:
+- expected_values:
+    COROLLAHYBRID_TRANSAXLE_OIL_T: 28
+  response: 7DA06621040C52044
+- expected_values:
+    COROLLAHYBRID_TRANSAXLE_OIL_T: 26
+  response: 7DA06621040C71042
+- expected_values:
+    COROLLAHYBRID_TRANSAXLE_OIL_T: 25
+  response: 7DA06621040C7A041
+- expected_values:
+    COROLLAHYBRID_TRANSAXLE_OIL_T: 23
+  response: 7DA06621040CA203F
