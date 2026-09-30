@@ -1,4 +1,4 @@
-command_id: 7D2.221F5B|fc=1
+command_id: 7D2.7DA.221F5B|fc=1
 test_cases:
 - expected_values:
     COROLLAHYBRID_SOC: 19.21569
