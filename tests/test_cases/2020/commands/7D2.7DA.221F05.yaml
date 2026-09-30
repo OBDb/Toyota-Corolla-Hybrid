@@ -1,0 +1,14 @@
+command_id: 7D2.7DA.221F05
+test_cases:
+- expected_values:
+    COROLLAHYBRID_COOL_T: 54
+  response: 7DA04621F055E
+- expected_values:
+    COROLLAHYBRID_COOL_T: 55
+  response: 7DA04621F055F
+- expected_values:
+    COROLLAHYBRID_COOL_T: 56
+  response: 7DA04621F0560
+- expected_values:
+    COROLLAHYBRID_COOL_T: 59
+  response: 7DA04621F0563

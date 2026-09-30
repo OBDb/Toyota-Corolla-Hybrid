@@ -1,0 +1,14 @@
+command_id: 7D2.7DA.221039
+test_cases:
+- expected_values:
+    COROLLAHYBRID_FRONT_REAR_MOTOR_TQ: -29.434
+  response: 7DA0762103920000D06
+- expected_values:
+    COROLLAHYBRID_FRONT_REAR_MOTOR_TQ: -29.417
+  response: 7DA0762103920000D17
+- expected_values:
+    COROLLAHYBRID_FRONT_REAR_MOTOR_TQ: -29.401
+  response: 7DA0762103920000D27
+- expected_values:
+    COROLLAHYBRID_FRONT_REAR_MOTOR_TQ: -29.243
+  response: 7DA0762103921480DC5

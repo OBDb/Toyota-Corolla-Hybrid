@@ -1,0 +1,11 @@
+command_id: 7D2.7DA.221F49
+test_cases:
+- expected_values:
+    COROLLAHYBRID_ACC_PEDAL_POS_1: 15.68627
+  response: 7DA04621F4928
+- expected_values:
+    COROLLAHYBRID_ACC_PEDAL_POS_1: 32.94118
+  response: 7DA04621F4954
+- expected_values:
+    COROLLAHYBRID_ACC_PEDAL_POS_1: 41.17647
+  response: 7DA04621F4969

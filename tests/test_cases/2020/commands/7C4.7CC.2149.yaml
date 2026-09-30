@@ -1,0 +1,17 @@
+command_id: 7C4.7CC.2149
+test_cases:
+- expected_values:
+    COROLLAHYBRID_COMP_SPD: 1981
+  response: 7CC04614907BD
+- expected_values:
+    COROLLAHYBRID_COMP_SPD: 2249
+  response: 7CC04614908C9
+- expected_values:
+    COROLLAHYBRID_COMP_SPD: 2370
+  response: 7CC0461490942
+- expected_values:
+    COROLLAHYBRID_COMP_SPD: 2562
+  response: 7CC0461490A02
+- expected_values:
+    COROLLAHYBRID_COMP_SPD: 2628
+  response: 7CC0461490A44
