@@ -1,9 +1,9 @@
 model_year: 2019
 supported_commands_by_ecu:
   "7C0":
-  - 7C0.221022|fc=1:COROLLAHYBRID_FLV
+  - 7C0.221022
   "7D2":
-  - 7D2.221F5B|fc=1:COROLLAHYBRID_SOC
+  - 7D2.221F5B
   "7DF":
   - 7DF.0104
   - 7DF.0105
