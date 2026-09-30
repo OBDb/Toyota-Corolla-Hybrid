@@ -1,4 +1,7 @@
-{ "commands": [
+{ "ecu": [
+    { "hdr": "7E1", "type": "transmission" }
+  ],
+  "commands": [
 { "hdr": "750", "rax": "758", "eax": "2A", "fcm1": true, "dbg": true, "cmd": {"21": "15"}, "freq": 15,
   "signals": [
     {"id": "COROLLAHYBRID_TIRE_P_1_SET_2", "path": "Tires", "fmt": {           "len": 8, "max": 3.89, "min": -0.5, "mul": 69, "div": 4000, "add": -0.5, "unit": "bars" }, "name": "Tire pressure 1, set 2"},
