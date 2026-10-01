@@ -1,5 +1,8 @@
 command_id: 780.788.2104
 test_cases:
 - expected_values:
+    COROLLAHYBRID_BUCKLE_RS: 1
+  response: '78806610402030101'
+- expected_values:
     COROLLAHYBRID_BUCKLE_RS: 2
   response: '78806610402030102'
