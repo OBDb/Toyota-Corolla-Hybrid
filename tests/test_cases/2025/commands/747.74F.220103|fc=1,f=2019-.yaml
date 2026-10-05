@@ -1,0 +1,8 @@
+command_id: 747.74F.220103|fc=1,f=2019-
+test_cases:
+- expected_values:
+    COROLLAHYBRID_ODO: 13770
+  response: 74F07620103020035CA
+- expected_values:
+    COROLLAHYBRID_ODO: 13782
+  response: 74F07620103020035D6

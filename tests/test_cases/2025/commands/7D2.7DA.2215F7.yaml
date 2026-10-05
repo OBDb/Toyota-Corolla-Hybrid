@@ -1,0 +1,14 @@
+command_id: 7D2.7DA.2215F7
+test_cases:
+- expected_values:
+    COROLLAHYBRID_12V_C: 3.6622
+  response: 7DA056215F783C0
+- expected_values:
+    COROLLAHYBRID_12V_C: 3.8949
+  response: 7DA056215F783FD
+- expected_values:
+    COROLLAHYBRID_12V_C: 4.94394
+  response: 7DA056215F78510
+- expected_values:
+    COROLLAHYBRID_12V_C: 7.08017
+  response: 7DA056215F78740
