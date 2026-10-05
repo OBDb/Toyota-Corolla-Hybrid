@@ -2,11 +2,11 @@
     { "hdr": "7E1", "type": "transmission" }
   ],
   "commands": [
-{ "hdr": "747", "rax": "74F", "fcm1": true, "dbg": true, "cmd": {"22": "0103"}, "freq": 10, "filter": { "from": 2019 },
+{ "hdr": "747", "rax": "74F", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10, "filter": { "from": 2019 }, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_ODO", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "747", "rax": "74F", "dbg": true, "cmd": {"22": "1814"}, "freq": 5, "filter": { "from": 2019 },
+{ "hdr": "747", "rax": "74F", "cmd": {"22": "1814"}, "freq": 5, "filter": { "from": 2019 }, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_BAT_T_01", "path": "Battery", "fmt": {            "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 01"},
     {"id": "COROLLAHYBRID_BAT_T_02", "path": "Battery", "fmt": {"bix": 16,  "len": 16, "max": 205, "min": -50, "mul": 19531, "div": 5000000, "add": -50, "unit": "celsius" }, "name": "Battery temperature 02"},
@@ -29,7 +29,7 @@
   "signals": [
     {"id": "COROLLAHYBRID_BAT_HEATER_T", "path": "Battery", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Battery heater temperature"}
   ]},
-{ "hdr": "747", "rax": "74F", "fcm1": true, "dbg": true, "cmd": {"22": "182E"}, "freq": 1, "filter": { "from": 2019 },
+{ "hdr": "747", "rax": "74F", "fcm1": true, "cmd": {"22": "182E"}, "freq": 1, "filter": { "from": 2019 }, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_HVBAT_C01_V", "path": "Battery.Cells", "fmt": {             "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #01 voltage"},
     {"id": "COROLLAHYBRID_HVBAT_C02_V", "path": "Battery.Cells", "fmt": {"bix": 16,   "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery cell #02 voltage"},
@@ -374,7 +374,7 @@
   "signals": [
     {"id": "COROLLAHYBRID_COUPLING_TEMP", "path": "Drivetrain", "fmt": { "len": 16, "max": 100, "div": 128, "unit": "celsius" }, "name": "Coupling temperature"}
   ]},
-{ "hdr": "7B3", "rax": "7BB", "dbg": true, "cmd": {"22": "1004"}, "freq": 0.25,
+{ "hdr": "7B3", "rax": "7BB", "cmd": {"22": "1004"}, "freq": 0.25, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_STEERING_ANGLE", "path": "Control", "fmt": { "len": 16, "max": 410, "min": -410, "mul": 1.5, "sign": true, "unit": "degrees" }, "name": "Steering angle"}
   ]},
@@ -423,7 +423,7 @@
   "signals": [
     {"id": "COROLLAHYBRID_REVERSE_BEEP", "path": "Seatbelts", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "onoff" }, "name": "Reverse beep"}
   ]},
-{ "hdr": "7C0", "rax": "7C8", "cmd": {"22": "1021"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7C0", "rax": "7C8", "cmd": {"22": "1021"}, "freq": 5, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_BATTERY_VOLTAGE_7C0", "path": "Electrical", "fmt": { "len": 8, "max": 20, "div": 10, "unit": "volts" }, "name": "B+ battery voltage", "suggestedMetric": "starterBatteryVoltage"}
   ]},
@@ -506,19 +506,19 @@
   "signals": [
     {"id": "COROLLAHYBRID_PARKING_BRAKE", "path": "Control", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "offon" }, "name": "Parking brake"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "0102"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "0102"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_KEY_CYCLE", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Key cycle"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_ODO_V2_V2", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1002"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1002"}, "freq": 5, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_AUX_BAT_V", "path": "Battery", "fmt": { "len": 16, "max": 79.95, "mul": 61, "div": 50000, "unit": "volts" }, "name": "Aux battery voltage"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1039"}, "freq": 0.25, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1039"}, "freq": 0.25, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_FRONT_REAR_MOTOR_TQ", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32.76, "min": -32.76, "div": 1000, "add": -32.768, "unit": "scalar" }, "name": "Front/rear motor torque ratio"}
   ]},
@@ -526,7 +526,7 @@
   "signals": [
     {"id": "COROLLAHYBRID_TRANSAXLE_OIL_T", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transaxle oil temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1069"}, "freq": 0.25, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1069"}, "freq": 0.25, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_MOTOR_REGENERATIVE",       "path": "Engine", "fmt": {           "len": 16, "max": 4095, "min": -4096, "div": 8, "add": -4096, "unit": "kilowatts" }, "name": "Motor regenerative brake torque, requested"},
     {"id": "COROLLAHYBRID_MOTOR_REGENERATIVE_BREAK", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 4095, "min": -4096, "div": 8, "add": -4096, "unit": "kilowatts" }, "name": "Motor regenerative brake torque"}
@@ -536,27 +536,27 @@
     {"id": "COROLLAHYBRID_REAR_MOTOR",              "path": "Engine", "fmt": {           "len": 16, "max": 4095, "min": -4096, "div": 8, "add": -4096, "unit": "kilowatts" }, "name": "Rear motor regenerative brake torque, requested"},
     {"id": "COROLLAHYBRID_REAR_MOTOR_REGENERATIVE", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 4095, "min": -4096, "div": 8, "add": -4096, "unit": "kilowatts" }, "name": "Rear motor regenerative brake torque"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "106C"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "106C"}, "freq": 5, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_HVBAT_SOC_MAX", "path": "Battery", "fmt": {"bix": 8,  "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "HV battery charge, maximum"},
     {"id": "COROLLAHYBRID_HVBAT_SOC_MIN", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "HV battery charge, minimum"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "106E"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "106E"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_AC_POWER_CONS", "path": "Engine", "fmt": { "len": 8, "max": 12.75, "div": 20, "unit": "kilowatts" }, "name": "Air conditioning power consumption"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1075"}, "freq": 0.1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1075"}, "freq": 0.1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_FR_WHEEL_VSS", "path": "Movement", "fmt": {           "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
     {"id": "COROLLAHYBRID_FL_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 16, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
     {"id": "COROLLAHYBRID_RR_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 32, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
     {"id": "COROLLAHYBRID_RL_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 48, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "107E"}, "freq": 5,
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "107E"}, "freq": 5, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_12V_BAT_V_BEFORE_SMR", "path": "Battery", "fmt": { "len": 8, "max": 11.56, "mul": 61, "div": 50000, "add": 11.25, "unit": "volts" }, "name": "12V battery voltage before system main relay"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A1"}, "freq": 0.25, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A1"}, "freq": 0.25, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_RPM_7D2", "path": "Engine", "fmt": {           "len": 16, "max": 32767, "min": -32768,           "add": -32768, "unit": "rpm"          }, "name": "Motor RPM"},
     {"id": "COROLLAHYBRID_TQ",      "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 4095,  "min": -4096,  "div": 8, "add": -4096,  "unit": "newtonMeters" }, "name": "Motor torque"}
@@ -570,7 +570,7 @@
   "signals": [
     {"id": "COROLLAHYBRID_GEN_INVERTER_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Generator inverter temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A5"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A5"}, "freq": 5, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_MOTOR_INVERTER_T",     "path": "Engine", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor inverter temperature"},
     {"id": "COROLLAHYBRID_MOTOR_INVERTER_T_ON",  "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor inverter temperature after ignition on"},
@@ -581,55 +581,55 @@
     {"id": "COROLLAHYBRID_RM_INVRT_COOL_T", "path": "Engine", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Rear motor inverter, coolant temperature"},
     {"id": "COROLLAHYBRID_M_INVRT_MAX_T",   "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor inverter, maximum temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A7"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A7"}, "freq": 5, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_BOOSTING_CONV_T_HI", "path": "Transmission", "fmt": {          "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Boosting converter temperature, upper"},
     {"id": "COROLLAHYBRID_BOOSTING_CONV_T_LO", "path": "Transmission", "fmt": {"bix": 8, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Boosting converter temperature, lower"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "10A8"}, "freq": 5,
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A8"}, "freq": 5, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_GEN_INVERTER_T_7D2",      "path": "Engine", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Generator inverter temperature"},
     {"id": "COROLLAHYBRID_GEN_INVERTER_T_AFTER_ON", "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Generator inverter temperature after ignition on"},
     {"id": "COROLLAHYBRID_MAX_GEN_INVERTER_T",      "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Maximum generator inverter temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10B0"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10B0"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_VL_V_BEFORE_BOOSTING", "path": "Battery", "fmt": {           "len": 16, "max": 32767, "div": 2, "unit": "volts" }, "name": "Vl-voltage before boosting"},
     {"id": "COROLLAHYBRID_VH_V_AFTER_BOOSTING",  "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 32767, "div": 2, "unit": "volts" }, "name": "Vh-voltage after boosting"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10B2"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10B2"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_INVRT_COOLANT_T", "path": "Engine", "fmt": { "len": 8, "max": 100, "add": -40, "unit": "celsius" }, "name": "Inverter coolant temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "1112"}, "freq": 1,
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1112"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_INVERTER_WATER_PMP", "path": "Engine", "fmt": { "len": 16, "max": 199, "mul": 15259, "div": 5000000, "unit": "percent" }, "name": "Inverter water pump duty"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "111C"}, "freq": 1,
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "111C"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_DC_DC_CONV_OUTPUT", "path": "Transmission", "fmt": { "len": 8, "max": 199, "mul": 25, "div": 32, "unit": "amps" }, "name": "DC-DC converter output current"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "111D"}, "freq": 1,
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "111D"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_DC_DC_CONV_LOW_SIDE_V", "path": "Battery", "fmt": { "len": 8, "max": 19.92, "mul": 1953, "div": 25000, "unit": "volts" }, "name": "DC-DC converter low side voltage"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "111E"}, "freq": 1,
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "111E"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_DC_DC_CONV_HIGH_SIDE_V", "path": "Battery", "fmt": { "len": 16, "max": 7999, "mul": 1220703, "div": 10000000, "unit": "volts" }, "name": "DC-DC converter high side voltage"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "111F"}, "freq": 1,
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "111F"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_DC_DC_CONV_TGT_V", "path": "Battery", "fmt": { "len": 16, "max": 7999, "mul": 1220703, "div": 10000000, "unit": "volts" }, "name": "DC-DC converter, target voltage before charging"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "15EE"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "15EE"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_12V_V_V2", "path": "Battery", "fmt": { "len": 8, "max": 80.2, "mul": 0.31448, "add": 0.0125, "unit": "volts" }, "name": "12V battery voltage", "suggestedMetric": "starterBatteryVoltage"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "15F7"}, "freq": 0.5, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "15F7"}, "freq": 0.5, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_12V_C", "path": "Battery", "fmt": { "len": 16, "max": 124, "min": -125, "mul": 38.147, "div": 10000, "add": -125, "unit": "amps" }, "name": "12V battery current"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "15F8"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "15F8"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_12V_T", "path": "Battery", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "12V battery temperature"}
   ]},
@@ -656,27 +656,27 @@
   "signals": [
     {"id": "COROLLAHYBRID_HVBAT_MIN_T", "path": "Battery", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "HV battery minimum temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F05"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F05"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_COOL_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "nullmax": 215, "unit": "celsius" }, "name": "Coolant temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1F0D"}, "freq": 0.25, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1F0D"}, "freq": 0.25, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_VSS_V2", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F42"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F42"}, "freq": 5, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_12V_BAT_V_SMOOTHED", "path": "Battery", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "volts" }, "name": "12V battery voltage smoothed"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F46"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F46"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_AAT_7D2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Ambient temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F49"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F49"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_ACC_PEDAL_POS_1", "path": "Control", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal, position 1"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F4A"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F4A"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_ACC_PEDAL_POS_2", "path": "Control", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal, position 2"}
   ]},
@@ -684,7 +684,7 @@
   "signals": [
     {"id": "COROLLAHYBRID_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "State of charge", "suggestedMetric": "stateOfCharge"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F9A"}, "freq": 0.5, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F9A"}, "freq": 0.5, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_HVBAT_V", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 1023,                   "mul": 156.25, "div": 10000,               "unit": "volts" }, "name": "HV battery voltage", "suggestedMetric": "tractionBatteryVoltage"},
     {"id": "COROLLAHYBRID_HVBAT_C", "path": "Battery", "fmt": {"bix": 32, "len": 16, "max": 3276.7, "min": -3276.8,                "div": 10,    "sign": true, "unit": "amps"  }, "name": "HV battery current", "suggestedMetric": "tractionBatteryCurrent"}
