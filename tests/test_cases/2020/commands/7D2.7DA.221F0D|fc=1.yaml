@@ -4,5 +4,5 @@ test_cases:
     COROLLAHYBRID_VSS_V2: 0
   response: 7DA04621F0D00
 - expected_values:
-    COROLLAHYBRID_VSS_V2: 45
-  response: 7DA04621F0D2D
+    COROLLAHYBRID_VSS_V2: 126
+  response: 7DA04621F0D7E

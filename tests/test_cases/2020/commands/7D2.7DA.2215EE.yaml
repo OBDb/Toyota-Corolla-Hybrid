@@ -10,6 +10,12 @@ test_cases:
     COROLLAHYBRID_12V_V_V2: 12.90618
   response: 7DA056215EE2900
 - expected_values:
+    COROLLAHYBRID_12V_V_V2: 12.90618
+  response: 7DA056215EE2982
+- expected_values:
+    COROLLAHYBRID_12V_V_V2: 14.1641
+  response: 7DA056215EE2D38
+- expected_values:
     COROLLAHYBRID_12V_V_V2: 14.1641
   response: 7DA056215EE2DF6
 - expected_values:

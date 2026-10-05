@@ -4,14 +4,5 @@ test_cases:
     COROLLAHYBRID_VSS: 0
   response: 7B803612100
 - expected_values:
-    COROLLAHYBRID_VSS: 9.45
-  response: 7B803612107
-- expected_values:
-    COROLLAHYBRID_VSS: 21.6
-  response: 7B803612110
-- expected_values:
-    COROLLAHYBRID_VSS: 33.75
-  response: 7B803612119
-- expected_values:
-    COROLLAHYBRID_VSS: 35.1
-  response: 7B80361211A
+    COROLLAHYBRID_VSS: 135
+  response: 7B803612164
