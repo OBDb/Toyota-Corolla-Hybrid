@@ -4,8 +4,8 @@ test_cases:
     COROLLAHYBRID_ODO_V2_V2: 69732
   response: 7DA0762010301011064
 - expected_values:
-    COROLLAHYBRID_ODO_V2_V2: 69735
-  response: 7DA0762010301011067
-- expected_values:
     COROLLAHYBRID_ODO_V2_V2: 85833
   response: 7DA0762010302014F49
+- expected_values:
+    COROLLAHYBRID_ODO_V2_V2: 85888
+  response: 7DA0762010302014F80
