@@ -12,3 +12,9 @@ test_cases:
 - expected_values:
     COROLLAHYBRID_AAT_7D2: 17
   response: 7DA04621F4639
+- expected_values:
+    COROLLAHYBRID_AAT_7D2: 33
+  response: 7DA04621F4649
+- expected_values:
+    COROLLAHYBRID_AAT_7D2: 34
+  response: 7DA04621F464A

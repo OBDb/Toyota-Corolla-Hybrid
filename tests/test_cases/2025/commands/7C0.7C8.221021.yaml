@@ -4,6 +4,18 @@ test_cases:
     COROLLAHYBRID_BATTERY_VOLTAGE_7C0: 0
   response: 7C80462102100
 - expected_values:
+    COROLLAHYBRID_BATTERY_VOLTAGE_7C0: 12.6
+  response: 7C8046210217E
+- expected_values:
+    COROLLAHYBRID_BATTERY_VOLTAGE_7C0: 12.7
+  response: 7C8046210217F
+- expected_values:
+    COROLLAHYBRID_BATTERY_VOLTAGE_7C0: 13.3
+  response: 7C80462102185
+- expected_values:
+    COROLLAHYBRID_BATTERY_VOLTAGE_7C0: 13.5
+  response: 7C80462102187
+- expected_values:
     COROLLAHYBRID_BATTERY_VOLTAGE_7C0: 14
   response: 7C8046210218C
 - expected_values:

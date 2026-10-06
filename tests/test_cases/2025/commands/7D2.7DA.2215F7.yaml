@@ -1,8 +1,8 @@
 command_id: 7D2.7DA.2215F7
 test_cases:
 - expected_values:
-    COROLLAHYBRID_12V_C: 3.6622
-  response: 7DA056215F783C0
+    COROLLAHYBRID_12V_C: 1.13687
+  response: 7DA056215F7812A
 - expected_values:
     COROLLAHYBRID_12V_C: 3.8949
   response: 7DA056215F783FD

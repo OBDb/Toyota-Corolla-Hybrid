@@ -1,32 +1,8 @@
 command_id: 7D2.7DA.22111F
 test_cases:
 - expected_values:
-    COROLLAHYBRID_DC_DC_CONV_TGT_V: 24.6582
-  response: 7DA0562111F00CA
-- expected_values:
-    COROLLAHYBRID_DC_DC_CONV_TGT_V: 25.02441
-  response: 7DA0562111F00CD
-- expected_values:
-    COROLLAHYBRID_DC_DC_CONV_TGT_V: 25.14648
-  response: 7DA0562111F00CE
-- expected_values:
-    COROLLAHYBRID_DC_DC_CONV_TGT_V: 25.26855
-  response: 7DA0562111F00CF
-- expected_values:
-    COROLLAHYBRID_DC_DC_CONV_TGT_V: 25.39062
-  response: 7DA0562111F00D0
-- expected_values:
-    COROLLAHYBRID_DC_DC_CONV_TGT_V: 25.51269
-  response: 7DA0562111F00D1
-- expected_values:
-    COROLLAHYBRID_DC_DC_CONV_TGT_V: 25.63476
-  response: 7DA0562111F00D2
-- expected_values:
-    COROLLAHYBRID_DC_DC_CONV_TGT_V: 25.75683
-  response: 7DA0562111F00D3
-- expected_values:
-    COROLLAHYBRID_DC_DC_CONV_TGT_V: 25.8789
-  response: 7DA0562111F00D4
+    COROLLAHYBRID_DC_DC_CONV_TGT_V: 24.53613
+  response: 7DA0562111F00C9
 - expected_values:
     COROLLAHYBRID_DC_DC_CONV_TGT_V: 26.24511
   response: 7DA0562111F00D7
