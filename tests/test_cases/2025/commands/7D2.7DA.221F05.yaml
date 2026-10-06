@@ -4,5 +4,5 @@ test_cases:
     COROLLAHYBRID_COOL_T: 40
   response: 7DA04621F0550
 - expected_values:
-    COROLLAHYBRID_COOL_T: 91
-  response: 7DA04621F0583
+    COROLLAHYBRID_COOL_T: 92
+  response: 7DA04621F0584

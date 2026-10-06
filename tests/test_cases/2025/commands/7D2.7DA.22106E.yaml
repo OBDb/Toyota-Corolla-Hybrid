@@ -3,3 +3,24 @@ test_cases:
 - expected_values:
     COROLLAHYBRID_AC_POWER_CONS: 0
   response: 7DA0462106E00
+- expected_values:
+    COROLLAHYBRID_AC_POWER_CONS: 0.65
+  response: 7DA0462106E0D
+- expected_values:
+    COROLLAHYBRID_AC_POWER_CONS: 0.7
+  response: 7DA0462106E0E
+- expected_values:
+    COROLLAHYBRID_AC_POWER_CONS: 0.75
+  response: 7DA0462106E0F
+- expected_values:
+    COROLLAHYBRID_AC_POWER_CONS: 0.8
+  response: 7DA0462106E10
+- expected_values:
+    COROLLAHYBRID_AC_POWER_CONS: 0.85
+  response: 7DA0462106E11
+- expected_values:
+    COROLLAHYBRID_AC_POWER_CONS: 0.95
+  response: 7DA0462106E13
+- expected_values:
+    COROLLAHYBRID_AC_POWER_CONS: 1.05
+  response: 7DA0462106E15

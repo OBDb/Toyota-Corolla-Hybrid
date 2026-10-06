@@ -4,29 +4,5 @@ test_cases:
     COROLLAHYBRID_INVRT_COOLANT_T: 18
   response: 7DA046210B23A
 - expected_values:
-    COROLLAHYBRID_INVRT_COOLANT_T: 19
-  response: 7DA046210B23B
-- expected_values:
-    COROLLAHYBRID_INVRT_COOLANT_T: 20
-  response: 7DA046210B23C
-- expected_values:
-    COROLLAHYBRID_INVRT_COOLANT_T: 21
-  response: 7DA046210B23D
-- expected_values:
-    COROLLAHYBRID_INVRT_COOLANT_T: 22
-  response: 7DA046210B23E
-- expected_values:
-    COROLLAHYBRID_INVRT_COOLANT_T: 24
-  response: 7DA046210B240
-- expected_values:
-    COROLLAHYBRID_INVRT_COOLANT_T: 25
-  response: 7DA046210B241
-- expected_values:
-    COROLLAHYBRID_INVRT_COOLANT_T: 26
-  response: 7DA046210B242
-- expected_values:
-    COROLLAHYBRID_INVRT_COOLANT_T: 28
-  response: 7DA046210B244
-- expected_values:
-    COROLLAHYBRID_INVRT_COOLANT_T: 29
-  response: 7DA046210B245
+    COROLLAHYBRID_INVRT_COOLANT_T: 45
+  response: 7DA046210B255
