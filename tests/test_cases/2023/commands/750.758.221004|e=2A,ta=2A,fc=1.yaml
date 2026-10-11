@@ -16,6 +16,13 @@ test_cases:
 - expected_values:
     COROLLAHYBRID_TT_1: 2
     COROLLAHYBRID_TT_2: 2
+    COROLLAHYBRID_TT_4: 1
+  response: |-
+    7582A10086210042A2A
+    7582A21002900000000
+- expected_values:
+    COROLLAHYBRID_TT_1: 2
+    COROLLAHYBRID_TT_2: 2
     COROLLAHYBRID_TT_3: 3
     COROLLAHYBRID_TT_4: 2
   response: |-
