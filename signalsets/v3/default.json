@@ -152,21 +152,21 @@
     {"id": "COROLLAHYBRID_TP_RR",    "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 3.896, "div": 58, "add": -0.5, "nullmin": 0, "nullmax": 3.896, "unit": "bars" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
     {"id": "COROLLAHYBRID_TP_SPARE", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 3.896, "div": 58, "add": -0.5, "nullmin": 0, "nullmax": 3.896, "unit": "bars" }, "name": "Spare tire pressure"}
   ]},
-{ "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "1004"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2026 },
+{ "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "1004"}, "freq": 5, "filter": { "from": 2023 }, "dbgfilter": { "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_TT_1", "path": "Tires", "fmt": {           "len": 8, "max": 100, "min": -30, "add": -40, "nullmin": -30, "unit": "celsius" }, "name": "Front right tire temperature"},
     {"id": "COROLLAHYBRID_TT_2", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 100, "min": -30, "add": -40, "nullmin": -30, "unit": "celsius" }, "name": "Front left tire temperature"},
     {"id": "COROLLAHYBRID_TT_3", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 100, "min": -30, "add": -40, "nullmin": -30, "unit": "celsius" }, "name": "Rear right tire temperature"},
     {"id": "COROLLAHYBRID_TT_4", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 100, "min": -30, "add": -40, "nullmin": -30, "unit": "celsius" }, "name": "Rear left tire temperature"}
   ]},
-{ "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "1005"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2026 },
+{ "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "1005"}, "freq": 5, "filter": { "from": 2023 }, "dbgfilter": { "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_TP_1", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 56.1212, "div": 4.125, "add": -5.6969697, "nullmin": 0, "nullmax": 56.1212, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
     {"id": "COROLLAHYBRID_TP_2", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 56.1212, "div": 4.125, "add": -5.6969697, "nullmin": 0, "nullmax": 56.1212, "unit": "psi" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
     {"id": "COROLLAHYBRID_TP_3", "path": "Tires", "fmt": {"bix": 40, "len": 8, "max": 56.1212, "div": 4.125, "add": -5.6969697, "nullmin": 0, "nullmax": 56.1212, "unit": "psi" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
     {"id": "COROLLAHYBRID_TP_4", "path": "Tires", "fmt": {"bix": 56, "len": 8, "max": 56.1212, "div": 4.125, "add": -5.6969697, "nullmin": 0, "nullmax": 56.1212, "unit": "psi" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"}
   ]},
-{ "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "2021"}, "freq": 86400, "dbgfilter": { "to": 2022, "from": 2026 },
+{ "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "2021"}, "freq": 86400, "filter": { "from": 2023 }, "dbgfilter": { "from": 2026 },
   "signals": [
     {"id": "COROLLAHYBRID_TID_1", "path": "Tires", "name": "Tire 1 position", "fmt": {"len": 8, "map": {
           "1": { "description": "Front left",  "value": "FL" },
@@ -522,7 +522,7 @@
   "signals": [
     {"id": "COROLLAHYBRID_FRONT_REAR_MOTOR_TQ", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32.76, "min": -32.76, "div": 1000, "add": -32.768, "unit": "scalar" }, "name": "Front/rear motor torque ratio"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1040"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1040"}, "freq": 1, "filter": { "to": 2022 }, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "COROLLAHYBRID_TRANSAXLE_OIL_T", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transaxle oil temperature"}
   ]},
@@ -566,7 +566,7 @@
     {"id": "COROLLAHYBRID_RM_TQ_REQ", "path": "Engine", "fmt": {           "len": 16, "max": 32767, "min": -32768,           "add": -32768, "unit": "rpm"          }, "name": "Rear motor speed"},
     {"id": "COROLLAHYBRID_RM_TQ",     "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 4095,  "min": -4096,  "div": 8, "add": -4096,  "unit": "newtonMeters" }, "name": "Rear motor torque"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A4"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A4"}, "freq": 5, "filter": { "to": 2022 }, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "COROLLAHYBRID_GEN_INVERTER_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Generator inverter temperature"}
   ]},
@@ -637,12 +637,12 @@
   "signals": [
     {"id": "COROLLAHYBRID_HVBAT_CHRG_V", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 10, "unit": "volts" }, "name": "HV battery charge voltage"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1802"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1802"}, "freq": 1, "filter": { "to": 2022 }, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "COROLLAHYBRID_AUXILIARY_BAT",    "path": "Battery", "fmt": {           "len": 8, "max": -12451, "min": -12500, "mul": 2525, "div": 13107, "add": -12500, "unit": "amps"    }, "name": "Auxiliary battery current"},
     {"id": "COROLLAHYBRID_HYBRID_BAT_1_FAN", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 127,                                "div": 2,                    "unit": "percent" }, "name": "Hybrid battery 1 fan"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1814"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1814"}, "freq": 5, "filter": { "to": 2022 }, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "COROLLAHYBRID_HYBRID_BAT_T_1", "path": "Battery", "fmt": {           "len": 16, "max": 400, "min": -58, "mul": 458, "div": 65535, "add": -58, "unit": "fahrenheit" }, "name": "Hybrid battery temperature 1"},
     {"id": "COROLLAHYBRID_HYBRID_BAT_T_2", "path": "Battery", "fmt": {"bix": 16, "len": 8,  "max": 401, "min": -58, "mul": 9,   "div": 5,     "add": -58, "unit": "fahrenheit" }, "name": "Hybrid battery temperature 2"},
