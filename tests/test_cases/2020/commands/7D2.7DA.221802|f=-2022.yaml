@@ -1,4 +1,4 @@
-command_id: 7D2.7DA.221802
+command_id: 7D2.7DA.221802|f=-2022
 test_cases:
 - expected_values:
     COROLLAHYBRID_AUXILIARY_BAT: -12500
