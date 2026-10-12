@@ -425,7 +425,7 @@
   ]},
 { "hdr": "7C0", "rax": "7C8", "cmd": {"22": "1021"}, "freq": 5, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
-    {"id": "COROLLAHYBRID_BATTERY_VOLTAGE_7C0", "path": "Electrical", "fmt": { "len": 8, "max": 20, "div": 10, "unit": "volts" }, "name": "B+ battery voltage", "suggestedMetric": "starterBatteryVoltage"}
+    {"id": "COROLLAHYBRID_BATTERY_VOLTAGE_7C0", "path": "Electrical", "fmt": { "len": 8, "max": 20, "div": 10, "nullmin": 0, "unit": "volts" }, "name": "B+ battery voltage", "suggestedMetric": "starterBatteryVoltage"}
   ]},
 { "hdr": "7C0", "rax": "7C8", "fcm1": true, "cmd": {"22": "1022"}, "freq": 1, "dbgfilter": { "years": [2022], "from": 2026 },
   "signals": [
