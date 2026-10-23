@@ -7,5 +7,5 @@ test_cases:
     COROLLAHYBRID_SOC: 45.88235
   response: 7DA04621F5B75
 - expected_values:
-    COROLLAHYBRID_SOC: 80.39216
-  response: 7DA04621F5BCD
+    COROLLAHYBRID_SOC: 81.96078
+  response: 7DA04621F5BD1
