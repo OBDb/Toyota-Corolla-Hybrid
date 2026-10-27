@@ -31,6 +31,7 @@ supported_commands_by_ecu:
   - 0144:EQ_RAT
   - 0145:TP_R
   - 0146:AAT
+  - 7E0.0104:LOAD_PCT
   - 7E0.010D:VSS
   - 7E0.0110:MAF
   - 7E0.0124:LAMBDA11_VOLT,O2S11_VOLT
