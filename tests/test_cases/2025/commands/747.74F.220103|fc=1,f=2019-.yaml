@@ -9,3 +9,6 @@ test_cases:
 - expected_values:
     COROLLAHYBRID_ODO: 14593
   response: 74F0762010302003901
+- expected_values:
+    COROLLAHYBRID_ODO: 15249
+  response: 74F0762010302003B91
