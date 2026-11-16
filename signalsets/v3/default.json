@@ -264,8 +264,8 @@
   ]},
 { "hdr": "7B0", "rax": "7B8", "cmd": {"21": "47"}, "freq": 0.25, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
-    {"id": "COROLLAHYBRID_LAT_G",       "path": "Orientation", "fmt": {           "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Lateral g"},
-    {"id": "COROLLAHYBRID_LNG_G",       "path": "Orientation", "fmt": {"bix": 8,  "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Longitudinal g"},
+    {"id": "COROLLAHYBRID_LAT_G",       "path": "Orientation", "fmt": {           "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Lateral g",                   "suggestedMetric": "lateralAcceleration"},
+    {"id": "COROLLAHYBRID_LNG_G",       "path": "Orientation", "fmt": {"bix": 8,  "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Longitudinal g",              "suggestedMetric": "longitudinalAcceleration"},
     {"id": "COROLLAHYBRID_YAW_RATE",    "path": "Orientation", "fmt": {"bix": 16, "len": 8,  "max": 127,  "min": -128,             "add": -128,                  "unit": "degrees" }, "name": "Yaw rate value, degrees/sec"},
     {"id": "COROLLAHYBRID_STEER_ANGLE", "path": "Control",     "fmt": {"bix": 24, "len": 16, "max": 3276, "min": -3276, "div": 10, "add": -3276.8,               "unit": "degrees" }, "name": "Steering wheel angle",        "description": "Positive = counter-clockwise, negative = clockwise."}
   ]},
