@@ -4,7 +4,12 @@
   "commands": [
 { "hdr": "747", "rax": "74F", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10, "filter": { "from": 2019 }, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
-    {"id": "COROLLAHYBRID_ODO", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+    {"id": "COROLLAHYBRID_ODO_RAW", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "scalar" }, "name": "Odometer, in the cluster's unit"},
+    {"id": "COROLLAHYBRID_ODO_UNIT", "path": "Trips", "name": "Odometer unit", "fmt": {"len": 8, "map": {
+          "1": { "description": "Kilometers", "value": "KM" },
+          "2": { "description": "Miles",      "value": "MI" }
+        }}
+    }
   ]},
 { "hdr": "747", "rax": "74F", "cmd": {"22": "1814"}, "freq": 5, "filter": { "from": 2019 }, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
@@ -512,7 +517,12 @@
   ]},
 { "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
-    {"id": "COROLLAHYBRID_ODO_V2_V2", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+    {"id": "COROLLAHYBRID_ODO_V2_V2_RAW", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "scalar" }, "name": "Odometer, in the cluster's unit"},
+    {"id": "COROLLAHYBRID_ODO_V2_V2_UNIT", "path": "Trips", "name": "Odometer unit", "fmt": {"len": 8, "map": {
+          "1": { "description": "Kilometers", "value": "KM" },
+          "2": { "description": "Miles",      "value": "MI" }
+        }}
+    }
   ]},
 { "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1002"}, "freq": 5, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
@@ -705,5 +715,13 @@
   "signals": [
     {"id": "COROLLAHYBRID_TQ_CONV_TURBINE_WHL", "path": "Tires", "fmt": { "len": 8, "max": 6, "mul": 12750, "unit": "rpm" }, "name": "Torque converter turbine wheel speed"}
   ]}
+],
+"synthetics": [
+  { "id": "COROLLAHYBRID_ODO", "path": "Trips", "name": "Odometer", "max": 16777215, "unit": "kilometers", "suggestedMetric": "odometer", "formula": {
+    "op": "unit", "value": "COROLLAHYBRID_ODO_RAW", "key": "COROLLAHYBRID_ODO_UNIT", "units": { "KM": "kilometers", "MI": "miles" }
+  }},
+  { "id": "COROLLAHYBRID_ODO_V2_V2", "path": "Trips", "name": "Odometer", "max": 16777215, "unit": "kilometers", "suggestedMetric": "odometer", "formula": {
+    "op": "unit", "value": "COROLLAHYBRID_ODO_V2_V2_RAW", "key": "COROLLAHYBRID_ODO_V2_V2_UNIT", "units": { "KM": "kilometers", "MI": "miles" }
+  }}
 ]
 }
