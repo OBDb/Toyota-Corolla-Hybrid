@@ -1,0 +1,8 @@
+command_id: 7D2.7DA.221FA6
+test_cases:
+- expected_values:
+    COROLLAHYBRID_ODO_1FA6: 111382.4
+  response: '7DA07621FA60010FEE0'
+- expected_values:
+    COROLLAHYBRID_ODO_1FA6: 111415.0
+  response: '7DA07621FA600110026'

@@ -1,0 +1,14 @@
+command_id: 700.708.222827
+test_cases:
+- expected_values:
+    COROLLAHYBRID_ELECTRIC_WATER_PUMP: 1520
+  response: '7080462282726'
+- expected_values:
+    COROLLAHYBRID_ELECTRIC_WATER_PUMP: 2760
+  response: '7080462282745'
+- expected_values:
+    COROLLAHYBRID_ELECTRIC_WATER_PUMP: 2880
+  response: '7080462282748'
+- expected_values:
+    COROLLAHYBRID_ELECTRIC_WATER_PUMP: 0
+  response: '7080462282700'

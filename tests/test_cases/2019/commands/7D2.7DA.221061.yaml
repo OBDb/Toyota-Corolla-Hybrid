@@ -1,0 +1,17 @@
+command_id: 7D2.7DA.221061
+test_cases:
+- expected_values:
+    COROLLAHYBRID_SHIFT: P
+  response: '7DA056210610001'
+- expected_values:
+    COROLLAHYBRID_SHIFT: R
+  response: '7DA056210610202'
+- expected_values:
+    COROLLAHYBRID_SHIFT: N
+  response: '7DA056210610404'
+- expected_values:
+    COROLLAHYBRID_SHIFT: D
+  response: '7DA056210610608'
+- expected_values:
+    COROLLAHYBRID_SHIFT: B
+  response: '7DA056210610810'

@@ -1,0 +1,17 @@
+command_id: 7D2.7DA.221076
+test_cases:
+- expected_values:
+    COROLLAHYBRID_READY: 0
+  response: '7DA056210760F00'
+- expected_values:
+    COROLLAHYBRID_READY: 0
+  response: '7DA056210760F02'
+- expected_values:
+    COROLLAHYBRID_READY: 1
+  response: '7DA056210760F03'
+- expected_values:
+    COROLLAHYBRID_READY: 1
+  response: '7DA056210760F07'
+- expected_values:
+    COROLLAHYBRID_READY: 1
+  response: '7DA056210760F0B'
