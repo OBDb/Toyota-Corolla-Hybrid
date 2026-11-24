@@ -1,8 +1,8 @@
 command_id: 7C0.7C8.221022|fc=1
 test_cases:
 - expected_values:
-    COROLLAHYBRID_FLV: 11.13
-  response: 7C8056210220459
+    COROLLAHYBRID_FLV: 11.11
+  response: 7C8056210220457
 - expected_values:
     COROLLAHYBRID_FLV: 16.11
   response: 7C805621022064B
