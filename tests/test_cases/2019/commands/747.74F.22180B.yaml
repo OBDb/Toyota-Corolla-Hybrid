@@ -1,0 +1,11 @@
+command_id: 747.74F.22180B
+test_cases:
+- expected_values:
+    COROLLAHYBRID_HYBRID_BAT_IAT: 39.41454
+  response: '74F0562180B3673'
+- expected_values:
+    COROLLAHYBRID_HYBRID_BAT_IAT: 52.7209
+  response: '74F0562180B3DE3'
+- expected_values:
+    COROLLAHYBRID_HYBRID_BAT_IAT: 59.32515
+  response: '74F0562180B4194'
